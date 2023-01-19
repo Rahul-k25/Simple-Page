@@ -33,17 +33,22 @@
   margin: 26px 41px 21px 203px;
 }
 
-.link {
+/* .link {
   width: 150px;
   height: 69px;
   background-color: #222f3a;
-}
-.top-menu:hover{
+} */
+/* .link > .ramda{
   width: 68px;
   height: 17px;
   padding: 26px 41px;
   text-align: center;
+} */
+
+.n-h:hover{
+  background-color: #222f3a;
 }
+
 .fantasy-land-spec {
   width: 182px;
   height: 23px;
