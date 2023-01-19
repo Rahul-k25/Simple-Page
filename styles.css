@@ -1,0 +1,179 @@
+.container {
+  width: 1280px;
+  height: 1282px;
+  margin: auto;
+}
+.heading {
+  width: 292px;
+  height: 74px;
+  font-size: 70px;
+  font-family: sans-serif;
+  margin: 61px 1087px 45px 0px;
+}
+.heading-ra {
+  color: black;
+}
+.heading-mda {
+  color: #4bcaff;
+}
+
+.top-menu {
+  width: 100%;
+  height: 69px;
+  display: flex;
+  background-color: #35444f;
+  color: white;
+  list-style: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.functional-programming {
+  width: 274px;
+  height: 22px;
+  margin: 26px 41px 21px 203px;
+}
+
+.link {
+  width: 150px;
+  height: 69px;
+  background-color: #222f3a;
+}
+.top-menu:hover{
+  width: 68px;
+  height: 17px;
+  padding: 26px 41px;
+  text-align: center;
+}
+.fantasy-land-spec {
+  width: 182px;
+  height: 23px;
+  margin: 26px 85px 20px 42px;
+}
+.nodejs-for-all {
+  width: 133px;
+  height: 22px;
+  margin: 26px 195px 20px 0;
+}
+
+.left-menu{
+  width: 344px;
+  height: 399px;
+  margin: 51px 1px 484px 0;
+  border: 1px solid black;
+  list-style: none;
+}
+
+.left-menu__subPart{
+  width: 342px;
+  height: 81px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.left-menu__subPart__ramda{
+  height: 19px;
+  font-size: 22px;
+  margin: 30px 0 29px 44px;
+}
+.left-menu__subPart__why-ramda{
+  height: 25px;
+  font-size: 22px;
+  margin: 28px 0 28px 42px;
+}
+
+.left-menu__subPart__whats-different{
+  height: 19px;
+  font-size: 22px;
+  margin: 27px 0 35px 42px;
+}
+
+.left-menu__subPart__introduction{
+  height: 19px;
+  font-size: 22px;
+  margin: 26px 0 35px 44px;
+}
+
+.left-menu__subPart__philosophy{
+  height: 19px;
+  font-size: 22px;
+  margin: 26px 0 28px 44px;
+}
+
+.left-menu__subPart:hover{
+  padding-left:60px;
+  width: 282px;
+  text-align: center;
+  /* margin-left: 60px; */
+  background-color: #dbdbdb;
+  font-weight: bold;
+}
+
+.main-content{
+  display: flex;
+  width: 1280px;
+  height: 883px;
+}
+.sub-content{
+  width: 885px;
+  margin-top: 51px;
+  margin-left: 53px;
+}
+.top-img{
+  width: 882px;
+  height: 529px;
+  border: 1px solid black;
+}
+.top-img > img{
+  width: 320px;
+  height: 381px;
+  object-fit: cover;
+  align-items: center;
+  margin: 75px 268px 73px 297px;
+}
+
+.content{
+  width: 885px;
+  height: 354px;
+  margin: 50px 40px 21px 30px;
+}
+.paragraph{
+  width: 815px;
+  height: 109px;
+  font-size: 18px;
+  color: #2c2c2c;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.back-footer {
+  width: 100%;
+  height: 69px;
+  display: flex;
+  background-color: rgba(99, 105, 110, 0.48);
+  color: white;
+  list-style: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.back-footer__item{
+  display: flex;
+  width: 809px;
+  height: 18px;
+  color: #0c1927;
+  font-size: 26px;
+  margin: 22px 0px 21px 44px;
+  justify-content: space-between;
+}
+.back-footer > p{
+  color: #0c1927;
+  text-align: right;
+  margin: 22px 34px 21px 218px;
+}
+.h_blue:hover{
+  color:#3181a6;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #3181a6;
+}
+
