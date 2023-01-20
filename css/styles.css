@@ -31,6 +31,7 @@
   text-decoration: none;
   color: white;
   padding: 26px 42px 21px 42px;
+  transition: all 0.5s ease-out;
 }
 .top-menu__item:hover{
   background-color: #222f3a;
@@ -79,6 +80,7 @@
   align-items: center;
   text-decoration: none;
   color: black;
+  transition: all 0.5s ease-out;
 }
 
 .left-menu__subPart__ramda{
