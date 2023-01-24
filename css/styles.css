@@ -10,6 +10,10 @@
   font-family: sans-serif;
   margin: 61px 1087px 45px 0px;
 }
+
+.header > a{
+  text-decoration: none;
+}
 .header-ra {
   color: black;
 }
