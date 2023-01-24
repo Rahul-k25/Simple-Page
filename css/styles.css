@@ -87,30 +87,30 @@
   transition: all 0.5s ease-out;
 }
 
-.left-menu__subPart__ramda{
+.left-menu__subPart--ramda{
   height: 19px;
   font-size: 22px;
   margin: 30px 0 29px 44px;
 }
-.left-menu__subPart__why-ramda{
+.left-menu__subPart--why-ramda{
   height: 25px;
   font-size: 22px;
   margin: 28px 0 28px 42px;
 }
 
-.left-menu__subPart__whats-different{
+.left-menu__subPart--whats-different{
   height: 19px;
   font-size: 22px;
   margin: 27px 0 35px 42px;
 }
 
-.left-menu__subPart__introduction{
+.left-menu__subPart--introduction{
   height: 19px;
   font-size: 22px;
   margin: 26px 0 35px 44px;
 }
 
-.left-menu__subPart__philosophy{
+.left-menu__subPart--philosophy{
   height: 19px;
   font-size: 22px;
   margin: 26px 0 28px 44px;
@@ -186,11 +186,11 @@
   text-align: right;
   margin: 22px 34px 21px 218px;
 }
-.h_blue{
+.back-footer__item--h_blue{
   text-decoration: none;
   color: black;
 }
-.h_blue:hover{
+.back-footer__item--h_blue:hover{
   color:#3181a6;
   padding-bottom: 25px;
   border-bottom: 2px solid #3181a6;
