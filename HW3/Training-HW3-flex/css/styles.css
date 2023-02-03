@@ -1,76 +1,56 @@
 .container {
   width: 1366px;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.852);
-  position: relative;
+  background-image: url('../img/backgroundImage.png');
+  padding-top: 49px;
   margin: auto;
-  box-sizing: border-box;
-  overflow: hidden;
-  z-index: -2;
-}
-.bubble {
-  position: relative;
-  display: flex;
-  z-index: -1;
-}
-.bubble span {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: #f1e3b9;
-  border-radius: 50%;
-  margin: 0 10px;
-  box-shadow: 0 0 0 10px #ff840044, 0 0 50px #ffa500, 0 0 100px #ffa500;
-  animation: animate 15s linear infinite;
-  animation-duration: calc(350s / var(--i));
 }
 
-.bubble span:nth-child(even) {
-  background: #d48105;
-  box-shadow: 0 0 0 5px #d4810589, 0 0 50px #d48105, 0 0 100px #d48105;
-}
-
-@keyframes animate{
-    0%{
-        transform: translateY(100vh) scale(0);
-    }
-    100%{
-        transform: translateY(-10vh) scale(1);
-    }
-}
-
-.heading {
+.heading-container {
+  width: 1065px;
   display: flex;
   justify-content: space-between;
-  padding: 19px 147px 48px 154px;
+  padding-bottom: 48px;
+  margin: auto;
+}
+.logo {
+  display: inline-flex;
+  width: 165px;
+  gap: 7px;
+  color: white;
+}
+.milan-holidays {
+  width: 54px;
+  height: 49px;
+  object-fit: cover;
+  background: url("../img/logoImg.png") 0 0;
+}
+
+.logo:hover .milan-holidays{
+  background: url("../img/logoImg.png") -56px 0;
+}
+
+.logo:hover .logo__header{
+  width: 54px;
+  color: #ff6600;
+}
+.logo__text {
+  margin-bottom: 7px;
+  font-size: 26px;
+  font-family: verdana;
+  font-weight: bold;
+  transition: all 0.4s ease-out;
+}
+
+.logo__caption {
+  font-size: 16px;
+  font-family: verdana;
+  font-weight: bold;
+  transition: all 0.4s ease-out;
 }
 .heading__name {
   display: inline-flex;
 }
-.heading__name > a {
-  width: 46px;
-  height: 44px;
-  object-fit: cover;
-  margin: 0 15px 0 1px;
-}
-.heading__title h2 {
-  width: 105px;
-  height: 22px;
-  margin-bottom: 9px;
-  font-size: 26px;
-  color: white;
-  font-family: verdana;
-  font-weight: bold;
-}
 
-.heading__title h3 {
-  width: 105px;
-  height: 13px;
-  font-size: 16px;
-  color: white;
-  font-family: verdana;
-  font-weight: bold;
-}
 .contact {
   text-align: right;
   color: white;
@@ -78,16 +58,18 @@
   margin-top: 12px;
 }
 .main-content {
+  width: 1065px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 147px 0 154px;
   justify-content: space-between;
+  margin: auto;
 }
 .item {
-  width: 311px;
+  position: relative;
+  width: 310px;
   height: 204px;
-  background: linear-gradient(to bottom, white, black);
-  margin-bottom: 97px;
+  margin-bottom: 102px;
+  transition: all 0.5s ease-out;
 }
 .item img {
   width: 307px;
@@ -95,16 +77,41 @@
   margin: 2px;
   object-fit: cover;
   transition: all 0.5s ease-out;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, white, black) 1;
+}
+.item-hover-effect{
+  display: none;
+}
+.item:hover .item-hover-effect{
+  position: absolute;
+  display: flex;
+  width: 307px;
+  height: 60px;
+  background: #ff6600af;
+  bottom: 0;
+  left: 4px;
+}
+.item:hover .item-title{
+  color: #ff6600;
+}
+.item:hover .font-small{
+  font-size: 11px;
+}
+.item-hover-price{
+  padding-left: 30px;
+}
+.view-details{
+  padding-top: 20px;
+  padding-left: 80px;
 }
 
-.item img:hover {
-  transform: scale(1.05);
-}
 a {
   text-decoration: none;
 }
 .item p {
-  margin-top: 20px;
+  margin-top: 12px;
   font-size: 18px;
   color: white;
   font-family: Verdana;
@@ -112,13 +119,10 @@ a {
   text-decoration-line: none;
   transition: all 0.5s ease-out;
 }
-.item p:hover {
-  transform: scale(1.05);
-}
 .footer {
   text-align: center;
   color: white;
-  margin-top: 6px;
   padding-bottom: 20px;
   font-size: 12px;
+  font-family: Verdana;
 }
