@@ -1,126 +1,115 @@
+body{
+  font-family: verdana;
+  background: url('../img/backgroundImage.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
-  width: 1366px;
-  background-image: url("../img/backgroundImage.png");
-  padding-top: 49px;
-  margin: auto;
+  max-width: 100%;
+  width: 1065px;
+  margin: 0 auto;
 }
 
 .heading {
-  width: 1065px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  padding-bottom: 48px;
-  margin: auto;
+  padding: 48px 0;
 }
-.logo {
+.header__milan-holidays {
   display: grid;
   width: 165px;
   grid-template-columns: 46px 105px;
   gap: 15px;
   color: white;
 }
-.milan-holidays {
+.header__logo {
   width: 54px;
   height: 49px;
   object-fit: cover;
   background: url("../img/logoImg.png") 0 0;
 }
 
-.logo:hover .milan-holidays{
+.header__milan-holidays:hover .header__logo{
   background: url("../img/logoImg.png") -56px 0;
 }
 
-.logo:hover .logo__header{
+.header__milan-holidays:hover .header__title{
   width: 54px;
   color: #ff6600;
 }
-.logo__text {
+.header__title{
+  font-weight: 800;
+}
+.header__title__text {
   margin-bottom: 7px;
   font-size: 26px;
-  font-family: verdana;
-  font-weight: bold;
-  transition: all 0.4s ease-out;
 }
-
-.logo__caption {
+.header__title__caption {
   font-size: 16px;
-  font-family: verdana;
-  font-weight: bold;
-  transition: all 0.4s ease-out;
 }
-.contact {
+.header__contact {
   text-align: right;
   color: white;
-  font-family: Verdana;
   margin-top: 12px;
 }
+
+
 .main-content {
-  width: 1065px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 67px;
+  gap: 60px;
   justify-content: space-between;
-  margin: auto;
 }
 .item {
   position: relative;
-  width: 311px;
-  height: 240px;
 }
 .item img {
-  width: 307px;
-  height: 200px;
   margin: 2px;
-  object-fit: cover;
   border-width: 2px;
   border-style: solid;
   border-image: linear-gradient(to bottom, white, black) 1;
-  transition: all 0.5s ease-out;
 }
-.item-hover-effect{
+.item__hover{
   display: none;
 }
-.item:hover .item-hover-effect{
+.item:hover .item__hover{
   position: absolute;
   display: grid;
   grid-template-columns: auto 1fr;
-  width: 307px;
-  height: 60px;
+  padding-bottom: 10px;
+  padding-right: 62px;
   background: #ff6600af;
   bottom: 35px;
-  left: 4px;
+  left: 3px;
 }
-.item:hover .item-title{
+.item:hover .item__title{
   color: #ff6600;
 }
-.item:hover .font-small{
+.item:hover .item__hover__font-small{
   font-size: 11px;
 }
-.item-hover-price{
+.item__hover__effect{
   padding-left: 30px;
 }
-.view-details{
+.item__hover__view-details{
   padding-top: 20px;
   padding-left: 50px;
 }
 a {
   text-decoration: none;
 }
-.item p {
+.item__title, .item__hover__view-details, .item__hover__font-small, .item__hover__price{
   margin-top: 12px;
   font-size: 18px;
   color: white;
-  font-family: Verdana;
   text-align: center;
-  text-decoration-line: none;
-  transition: all 0.5s ease-out;
 }
-.footer {
+.copyright {
   text-align: center;
   color: white;
-  margin-top: 66px;
+  margin-top: 55px;
   padding-bottom: 20px;
   font-size: 12px;
-  font-family: Verdana;
 }
