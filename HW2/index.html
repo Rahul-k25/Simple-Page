@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>HW2</title>
-</head>
-<body>
-    <div class="container">
-        <div class="header"> <a href="#"><span class="header-ra">Ra</span><span class="header-mda">mda.js</span></a></div>
+  </head>
+  <body>
+      <header class="header container">
+        <a href="#" class="header__title"
+          ><span class="header-ra">Ra</span
+          ><span class="header-mda">mda.js</span></a
+        >
+        <nav class="header__menu">
+          <a href="#" class="header__menu--item">Functional Programming</a>
+          <a href="#" class="header__menu--item">Ramda</a>
+          <a href="#" class="header__menu--item">Fantasy Land Spec</a>
+          <a href="#" class="header__menu--item">Node.js for all</a>
+        </nav>
+      </header>
 
-        <header>
-            <nav class="top-menu">
-                <a href="#" class="top-menu__item f-p">Functional Programming</a>
-                <a href="#" class="top-menu__item ramda">Ramda</a>
-                <a href="#" class="top-menu__item f-l-s">Fantasy Land Spec</a>
-                <a href="#" class="top-menu__item n-f-a">Node.js for all</a>
-            </nav>
-        </header>
-
-        <div class="main-content">
-            <div class="left-menu">
-                <a href="#" class="left-menu__subPart"><span class="left-menu__subPart--ramda">Ramda</span></a>
-                <a href="#" class="left-menu__subPart"><span class="left-menu__subPart--why-ramda">Why Rmada?</span></a>
-                <a href="#" class="left-menu__subPart"><span class="left-menu__subPart--whats-different">What's Different?</span></a>
-                <a href="#" class="left-menu__subPart"><span class="left-menu__subPart--introduction">Introduction</span></a>
-                <a href="#" class="left-menu__subPart"><span class="left-menu__subPart--philosophy">Philosophy</span></a>
-            </div>
-            <div class="sub-content">
-                <div class="top-img">
-                    <img class="logo" src="img/image.JPG" alt="Goat-Image" />
-                </div>
-                <div class="content">
-                    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                        repudiandae neque accusantium nemo assumenda delectus architecto,
-                        eveniet iusto iste sed quo ullam nobis repellendus libero vero
-                        explicabo rem, quis error. Nisi, maiores illo et expedita,
-                        laudantium eaque autem quod delectus vero tenetur nemo accusamus
-                        nostrum explicabo eveniet mollitia illum deleniti.</p>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-                        ipsam? Maiores incidunt, molestiae quo voluptatum, rem tempora earum
-                        debitis praesentium quis autem dolores ipsam explicabo repudiandae!
-                        Consequatur eum consectetur, ex, quasi eius aperiam qui quis a modi
-                        repellendus accusantium omnis architecto illum nesciunt autem nihil
-                        soluta nobis doloribus sapiente corrupti?</p>
-                </div>
-            </div>
+      <main class="main-content container">
+        <div class="main-content__sidebar">
+          <a href="#" class="main-content__sidebar__item">Ramda</a>
+          <a href="#" class="main-content__sidebar__item">Why Rmada?</a>
+          <a href="#" class="main-content__sidebar__item">What's Different?</a>
+          <a href="#" class="main-content__sidebar__item">Introduction</a>
+          <a href="#" class="main-content__sidebar__item">Philosophy</a>
         </div>
-        <div class="back-footer">
-            <div class="back-footer__item">
-                <a href="#" class="back-footer__item--h_blue">Ramda</a>
-                <a href="#" class="back-footer__item--h_blue">Why Rmada?</a>
-                <a href="#" class="back-footer__item--h_blue">What's Different?</a>
-                <a href="#" class="back-footer__item--h_blue">Introduction</a>
-                <a href="#" class="back-footer__item--h_blue">Philosophy</a>
-            </div>
-            <p>Copyright © 2018</p>
+        <div class="content">
+          <div class="top-img">
+            <img class="ramda-logo" src="img/image.JPG" alt="Ramda logo" />
+          </div>
+          <div class="text-content">
+            <p class="text-content__paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              repudiandae neque accusantium nemo assumenda delectus architecto,
+              eveniet iusto iste sed quo ullam nobis repellendus libero vero
+              explicabo rem, quis error. Nisi, maiores illo et expedita,
+              laudantium eaque autem quod delectus vero tenetur nemo accusamus
+              nostrum explicabo eveniet mollitia illum deleniti.
+            </p>
+            <p class="text-content__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              ipsam? Maiores incidunt, molestiae quo voluptatum, rem tempora
+              earum debitis praesentium quis autem dolores ipsam explicabo
+              repudiandae! Consequatur eum consectetur, ex, quasi eius aperiam
+              qui quis a modi repellendus accusantium omnis architecto illum
+              nesciunt autem nihil soluta nobis doloribus sapiente corrupti?
+            </p>
+          </div>
         </div>
+      </main>
+      <footer class="footer container">
+        <div class="footer__list">
+          <a href="#" class="footer__list__item">Ramda</a>
+          <a href="#" class="footer__list__item">Why Rmada?</a>
+          <a href="#" class="footer__list__item">What's Different?</a>
+          <a href="#" class="footer__list__item">Introduction</a>
+          <a href="#" class="footer__list__item">Philosophy</a>
+        </div>
+        <p class="copyright">Copyright © 2018</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

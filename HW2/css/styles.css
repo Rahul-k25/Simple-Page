@@ -1,17 +1,17 @@
-.container {
-  width: 1280px;
-  height: 1282px;
-  margin: auto;
-}
-.header {
-  width: 292px;
-  height: 74px;
-  font-size: 70px;
+body{
   font-family: sans-serif;
-  margin: 61px 1087px 45px 0px;
 }
 
-.header > a{
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 61px;
+}
+
+.header__title{
+  font-size: 70px;
   text-decoration: none;
 }
 .header-ra {
@@ -21,178 +21,193 @@
   color: #4bcaff;
 }
 
-.top-menu {
-  width: 1280px;
-  height: 69px;
+.header__menu{
   display: flex;
+  justify-content: center;
+  margin-top: 45px;
   background-color: #35444f;
-  color: white;
-  list-style: none;
   font-size: 20px;
-  font-family: sans-serif;
 }
-.top-menu__item{
+.header__menu--item{
   text-decoration: none;
   color: white;
   padding: 26px 42px 21px 42px;
-  transition: all 0.5s ease-out;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
 }
-.top-menu__item:hover{
+.header__menu--item:hover{
   background-color: #222f3a;
-  border: 1px solid rgba(255, 255, 255, 0.5)
-}
-.f-p {
-  margin-left: 160px;
-}
-
-.link {
-  width: 150px;
-  height: 69px;
-  background-color: #222f3a;
-}
-.link > .ramda{
-  width: 68px;
-  height: 17px;
-  padding: 26px 41px;
-  text-align: center;
-}
-
-.fantasy-land-spec {
-  width: 182px;
-  height: 23px;
-  margin: 26px 85px 20px 42px;
-}
-.nodejs-for-all {
-  width: 133px;
-  height: 22px;
-  margin: 26px 195px 20px 0;
-}
-
-.left-menu{
-  width: 344px;
-  height: 405px;
-  margin: 51px 1px 484px 0;
-  border: 1px solid black;
-  list-style: none;
-}
-
-.left-menu__subPart{
-  width: 342px;
-  height: 81px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  transition: all 0.5s ease-out;
-}
-
-.left-menu__subPart--ramda{
-  height: 19px;
-  font-size: 22px;
-  margin: 30px 0 29px 44px;
-}
-.left-menu__subPart--why-ramda{
-  height: 25px;
-  font-size: 22px;
-  margin: 28px 0 28px 42px;
-}
-
-.left-menu__subPart--whats-different{
-  height: 19px;
-  font-size: 22px;
-  margin: 27px 0 35px 42px;
-}
-
-.left-menu__subPart--introduction{
-  height: 19px;
-  font-size: 22px;
-  margin: 26px 0 35px 44px;
-}
-
-.left-menu__subPart--philosophy{
-  height: 19px;
-  font-size: 22px;
-  margin: 26px 0 28px 44px;
-}
-
-.left-menu__subPart:hover{
-  padding-left:60px;
-  width: 282px;
-  text-align: center;
-  background-color: #dbdbdb;
-  font-weight: bold;
+  border: 1px solid #ffffff55;
 }
 
 .main-content{
   display: flex;
-  width: 1280px;
-  height: 883px;
-}
-.sub-content{
-  width: 885px;
+  align-items: flex-start;
   margin-top: 51px;
-  margin-left: 53px;
+  gap: 53px;
+}
+.main-content__sidebar{
+  flex-basis: 30%;
+  border: 1px solid black;
+}
+
+.main-content__sidebar__item{
+  display: block;
+  padding: 27px 0 27px 44px;
+  text-decoration: none;
+  font-size: 26px;
+  color: rgb(70, 87, 99);
+  transition: all 0.4s ease-out;
+}
+
+.main-content__sidebar__item:hover{
+  padding-left:69px;
+  background-color: rgb(220, 220, 220);
+  color: black;
+  font-weight: 600;
+}
+.content{
+  flex-basis: 70%;
 }
 .top-img{
-  width: 882px;
+  position: relative;
   height: 529px;
   border: 1px solid black;
 }
-.top-img > img{
-  width: 320px;
-  height: 381px;
-  object-fit: cover;
-  align-items: center;
-  margin: 75px 268px 73px 297px;
+.ramda-logo{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition: all 0.4s ease-out;
+}
+.ramda-logo:hover{
+  transform: translate(50%, -50%) scale(1.1);
 }
 
-.content{
-  width: 885px;
-  height: 354px;
-  margin: 50px 40px 21px 30px;
+.text-content{
+  margin: 50px 30px;
 }
-.paragraph{
-  width: 815px;
-  height: 109px;
+.text-content__paragraph{
+  margin-bottom: 30px;
   font-size: 18px;
-  color: #2c2c2c;
-  line-height: 1.2;
+  line-height: 1.3;
   text-align: justify;
 }
-
-.back-footer {
-  width: 100%;
-  height: 69px;
-  display: flex;
-  background-color: rgba(99, 105, 110, 0.48);
-  color: white;
-  list-style: none;
-  font-size: 20px;
-  font-family: sans-serif;
+.text-content__paragraph:last-child{
+  margin-bottom: 0;
 }
 
-.back-footer__item{
+.footer {
   display: flex;
-  width: 809px;
-  height: 18px;
-  color: #0c1927;
-  font-size: 26px;
-  margin: 22px 0px 21px 44px;
   justify-content: space-between;
+  background-color: rgba(99, 105, 110, 0.48);
+  font-size: 22px;
+  margin-top: 21px;
+  margin-bottom: 30px;
 }
-.back-footer > p{
+
+.footer__list{
+  display: flex;
+  font-size: 26px;
+  align-items: center;
+  padding: 22px 44px;
+}
+.footer__list__item{
+  margin-right: 20px;
+  text-decoration:none;
+  color: black;
+  transition: all 0.4s ease-out;
+}
+.footer__list__item:hover{
+  color:#3181a6;
+  text-decoration:underline 1.2px;
+  text-underline-offset: 6px;
+}
+.copyright{
   color: #0c1927;
   text-align: right;
-  margin: 22px 34px 21px 218px;
-}
-.back-footer__item--h_blue{
-  text-decoration: none;
-  color: black;
-}
-.back-footer__item--h_blue:hover{
-  color:#3181a6;
-  padding-bottom: 25px;
-  border-bottom: 2px solid #3181a6;
+  padding: 22px 44px;
 }
 
+@media (max-width: 1000px) {
+  .container {
+    max-width: 980px;
+  }
+  .header__title{
+    font-size: 60px;
+  }
+  .header__menu{
+    font-size: 18px;
+  }
+
+  .main-content {
+    gap: 33px;
+  }
+
+  .main-content__sidebar__item {
+    padding: 14px 0 14px 22px;
+    font-size: 20px;
+  }
+
+  .main-content__sidebar__item:hover {
+    padding-left: 35px;
+  }
+
+  .text-content {
+    margin-bottom: 30px 15px;
+  }
+
+  .text-content__paragraph {
+    margin: 15px;
+    font-size: 16px;
+  }
+  .text-content__paragraph:last-child{
+    margin-bottom: 0;
+  }
+  .footer{
+    font-size: 16px;
+  }
+  .footer__list{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    max-width: 720px;
+  }
+  .header__title{
+    font-size: 45px;
+  }
+  .header__menu{
+    font-size: 16px;
+  }
+  .main-content {
+    gap: 20px;
+  }
+
+  .main-content__sidebar__item {
+    padding: 10px 0 10px 16px;
+    font-size: 14px;
+  }
+
+  .main-content__sidebar__item:hover {
+    padding-left: 25px;
+  }
+
+  .text-content {
+    margin: 20px 5px;
+  }
+
+  .text-content__paragraph {
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  .footer{
+    font-size: 12px;
+  }
+  .footer__list{
+    font-size: 16px;
+  }
+}
